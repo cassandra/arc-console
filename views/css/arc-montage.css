@@ -1,0 +1,62 @@
+/* ZoneMinder (A)ctive (R)response (C)amera montage view CSS file, $Date:
+  2013-08-30 19:52:12 +0000 (Fri, 30 Aug 2013) $, $Revision: 1 $ Copyright
+  (C) 2013 Anthony Cassandra
+
+  This program is free software; you can redistribute it and/or
+  modify it under the terms of the GNU General Public License
+  as published by the Free Software Foundation; either version 2
+  of the License, or (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+*/
+
+.arc-content {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.arc-montage-row {
+}
+.arc-montage-col {
+    float: left;
+    text-align: center;
+    border: 1px solid #7F7FB2;
+    background-color: #000000;
+    position: relative;
+}
+
+.arc-message {
+    position: absolute;
+    left: 10%;
+    top: 5px;
+    color: #f0f0f0;
+    font-weight: bold;
+    text-shadow:1px 1px 0px #000000;
+    z-index: 99;
+}
+.arc-message[state="subtle"] {
+    color: #c0c0c0;
+}
+.arc-message[state="alarm"] {
+    color: #f04040;
+}
+.arc-message[state="alert"] {
+    color: #f0f040;
+}
+
+.arc-hidden {
+    visibility: hidden;
+    display: none;
+}
+
+.arc-clear {
+    clear: both;
+}
+

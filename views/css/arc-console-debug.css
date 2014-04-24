@@ -1,0 +1,31 @@
+#arc-debug-pane {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    color: #303030;
+    background-color: #f8f8f8;
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid #a0a0a0;
+}
+
+.arc-debug-section {
+    float: left;
+    text-align: center;
+}
+
+.arc-debug-counters {
+    float: right;
+}
+.arc-debug-button {
+    width: 75px;
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid #a0a0a0;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.arc-debug-button:hover {
+    background-color: #f0f0f0;
+}

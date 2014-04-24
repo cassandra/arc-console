@@ -1,0 +1,288 @@
+/* ZoneMinder (A)ctive (R)response (C)amera console view CSS file, $Date:
+  2013-08-30 19:52:12 +0000 (Fri, 30 Aug 2013) $, $Revision: 1 $ Copyright
+  (C) 2013 Anthony Cassandra
+
+  This program is free software; you can redistribute it and/or
+  modify it under the terms of the GNU General Public License
+  as published by the Free Software Foundation; either version 2
+  of the License, or (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+*/
+
+body.arc-body {
+}
+.arc-page {
+    width: auto !important;
+    padding: 5px;
+}
+.arc-page[signal='warning'] {
+    background-color: #ebab11;
+}
+.arc-page[signal='critical'] {
+    background-color: #b02020;
+}
+.arc-content {
+    width: 100% !important;
+    margin: 0 !important;
+}
+#arc-event-pane {
+    float: left;
+    margin: 0px;
+    text-align: center;
+}
+.arc-event-list {
+}
+#arc-event-list-iframe {
+    width: 100%;
+}
+.arc-event-links {
+    padding-bottom: 5px;
+}
+#arc-event-video-iframe {
+    width: 100%;
+}
+.arc-event-video {
+}
+.arc-event-control {
+    width: 19%;
+}
+#closeControl {
+    float: right;
+}
+#arc-live-pane {
+    float: left;
+    margin: 0px;
+}
+#arc-live-controls {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.arc-live-buttons {
+    float: left;
+    width: 12%;
+    padding: 0px 4px 0px 4px;
+}
+.arc-live-monitor-control {
+    width: 100%;
+}
+.arc-live-monitor-state {
+    width: 100%;
+}
+.arc-live-monitor-select {
+}
+.arc-live-video {
+}
+#arc-live-video-iframe {
+    width: 100%;
+}
+
+.arc-waiting {
+    display: inline-block;
+    height: 20px;
+    margin: 2px;
+    
+    font-size:12px;
+    font-style:normal;
+    font-weight: bold;
+    
+    cursor: pointer;
+    overflow: hidden;
+    color: #808080;
+    font-style: italic;
+    text-align:center;
+}
+
+.arc-iframe-waiting {
+    width: 100%;
+    height: 100%;
+    font-style: italic;
+    text-align: center;
+    margin-top: 40%;
+    color: #a0a0a0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* ======================================== */
+/* Fancy CSS Buttons
+
+  Adapted from: http://www.cssbuttongenerator.com
+
+Button color schemes based on native zoneminder pale blue color:
+
+  Inactive button:
+    7f7fb2 - main color
+    9797b2 - lighter version of main color
+    a7a7b2 - very light for shading very edges
+
+  Active button:
+    e5aa4c - main color
+    e5bd7f - lighter version of main color
+    e5cfac - very light for shading very edges
+
+
+ */
+
+.arc-button-container {
+    text-align: center;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arc-button {
+    display: inline-block;
+    height: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: bold;
+    overflow: hidden;
+    margin: 2px;
+
+ 	-moz-box-shadow:inset 2px 2px 13px 0px #a7a7b2;
+	-webkit-box-shadow:inset 2px 2px 13px 0px #a7a7b2;
+	box-shadow:inset 2px 2px 13px 0px #a7a7b2;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #7F7FB2), color-stop(1, #9797b2) );
+	background:-moz-linear-gradient( center top, #7F7FB2 5%, #9797b2 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7F7FB2', endColorstr='#9797b2');
+	background-color:#7F7FB2;
+	-webkit-border-top-left-radius:20px;
+	-moz-border-radius-topleft:20px;
+	border-top-left-radius:20px;
+	-webkit-border-top-right-radius:20px;
+	-moz-border-radius-topright:20px;
+	border-top-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-radius-bottomright:20px;
+	border-bottom-right-radius:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-moz-border-radius-bottomleft:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0;
+	border:1px solid #469df5;
+	color:#ffffff;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #287ace;
+}
+.arc-button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #9797b2), color-stop(1, #7F7FB2) );
+	background:-moz-linear-gradient( center top, #9797b2 5%, #7F7FB2 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9797b2', endColorstr='#7F7FB2');
+	background-color:#7F7FB2;
+}
+.arc-button:active {
+	position:relative;
+	top:1px;
+}
+
+/* Fancy button color schemes
+
+Inactive button:
+7f7fb2 - main color
+9797b2 - lighter version of main color
+a7a7b2 - very light for shading very edges
+b7b7d2 - even lighter version
+
+Active button:
+
+e5aa4c - main color
+e5bd7f - lighter version of main color
+e5cfac - very light for shading very edges
+
+Inactive button:
+
+606060 - main color
+808080 - lighter version of main color
+a0a0a0 - very light for shading very edges
+
+Signal button:
+
+f02020 - main color
+f84040 - lighter version of main color
+fa6060 - very light for shading very edges
+*/
+
+.arc-button[state="active"] {
+ 	-moz-box-shadow:inset 2px 2px 13px 0px #e5cfac;
+	-webkit-box-shadow:inset 2px 2px 13px 0px #e5cfac;
+	box-shadow:inset 2px 2px 13px 0px #e5cfac;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #E5AA4C), color-stop(1, #e5bd7f) );
+	background:-moz-linear-gradient( center top, #E5AA4C 5%, #e5bd7f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#E5AA4C', endColorstr='#e5bd7f');
+	background-color:#E5AA4C;
+	border:1px solid #469df5;
+	color:#ffffff;
+	text-shadow:1px 1px 0px #287ace;
+}
+.arc-button[state="active"]:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e5bd7f), color-stop(1, #E5AA4C) );
+	background:-moz-linear-gradient( center top, #e5bd7f 5%, #E5AA4C 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5bd7f', endColorstr='#E5AA4C');
+	background-color:#E5AA4C;
+}
+
+.arc-button[state="inactive"] {
+ 	-moz-box-shadow:inset 2px 2px 13px 0px #a0a0a0;
+	-webkit-box-shadow:inset 2px 2px 13px 0px #a0a0a0;
+	box-shadow:inset 2px 2px 13px 0px #a0a0a0;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #606060), color-stop(1, #808080) );
+	background:-moz-linear-gradient( center top, #606060 5%, #808080 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#606060', endColorstr='#808080');
+	background-color:#606060;
+	border:1px solid #469df5;
+	color:#ffffff;
+	text-shadow:1px 1px 0px #287ace;
+}
+.arc-button[state="inactive"]:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #808080), color-stop(1, #606060) );
+	background:-moz-linear-gradient( center top, #808080 5%, #606060 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#808080', endColorstr='#606060');
+	background-color:#606060;
+}
+.arc-button-signal,
+.arc-button-signal[state="active"],
+.arc-button-signal[state="inactive"] {
+ 	-moz-box-shadow:inset 2px 2px 13px 0px #fa6060;
+	-webkit-box-shadow:inset 2px 2px 13px 0px #fa6060;
+	box-shadow:inset 2px 2px 13px 0px #fa6060;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f02020), color-stop(1, #f84040) );
+	background:-moz-linear-gradient( center top, #f02020 5%, #f84040 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f02020', endColorstr='#f84040');
+	background-color:#f02020;
+	border:1px solid #469df5;
+	color:#ffffff;
+	text-shadow:1px 1px 0px #287ace;
+}
+
+.arc-button-signal:hover,
+.arc-button-signal[state="active"]:hover,
+.arc-button-signal[state="inactive"]:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f84040), color-stop(1, #f02020) );
+	background:-moz-linear-gradient( center top, #f84040 5%, #f02020 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f84040', endColorstr='#f02020');
+	background-color:#f02020;
+}
+
+.arc-active {
+    background-color: #f8e8e8;
+}
+
+.arc-clear {
+    clear: both;
+}
+.arc-hidden {
+    display: none;
+    visibility: hidden;
+}
+

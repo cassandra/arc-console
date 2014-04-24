@@ -1,0 +1,15 @@
+.arc-event-video-empty {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 5em;
+    color: #a0a0a0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.arc-event-video-msg {
+    font-size: 75%;
+    font-style: italic;
+    padding-top: 10px;
+}
